@@ -15,6 +15,7 @@ pipeline {
             steps {
                 echo "Building website"
                 sh '''
+                git submodule update --init --recursive
                 hugo
                 '''
             }
