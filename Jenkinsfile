@@ -7,9 +7,6 @@ pipeline {
     environment {
         SSH_CREDS = credentials('ssh-key')
     }
-    triggers {
-        pollSCM 'H/5 * * * *'
-    }
     stages {
         stage('Build') {
             steps {
