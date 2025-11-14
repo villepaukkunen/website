@@ -11,18 +11,16 @@ pipeline {
         pollSCM 'H/5 * * * *'
     }
     stages {
-        stage('Build') {
+        stage('Build website') {
             steps {
-                echo "Building website"
                 sh '''
                 git submodule update --init --recursive
                 hugo
                 '''
             }
         }
-        stage('Publish') {
+        stage('Publish website') {
             steps {
-                echo 'Publishing website'
                 sh '''
                 HOST=m73-1.mandariini.uk
                 DIR=/srv/nfs/nginx-ville/
