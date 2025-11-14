@@ -10,7 +10,7 @@ defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 enableA11y = false
-enableSearch = false
+enableSearch = true
 enableCodeCopy = false
 
 replyByEmail = false
