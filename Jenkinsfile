@@ -11,10 +11,24 @@ pipeline {
         pollSCM 'H/5 * * * *'
     }
     stages {
-        stage('Build website') {
+        stage('Load git submodule') {
             steps {
                 sh '''
                 git submodule update --init --recursive
+                '''
+            }
+        }
+        stage('Set environment variables') {
+            steps {
+                script{
+                    env.HOST = "m73-1.mandariini.uk"
+                    env.DIR = "/srv/nfs/nginx-ville/"
+                }
+            }
+        }
+        stage('Build website') {
+            steps {
+                sh '''
                 hugo
                 '''
             }
@@ -22,9 +36,7 @@ pipeline {
         stage('Publish website') {
             steps {
                 sh '''
-                HOST=m73-1.mandariini.uk
-                DIR=/srv/nfs/nginx-ville/
-                rsync -e "ssh -o StrictHostKeyChecking=no -i $SSH_CREDS" -avz --delete public/ $SSH_CREDS_USR@${HOST}:${DIR}
+                rsync -e "ssh -o StrictHostKeyChecking=no -i $SSH_CREDS" -avz --delete public/ $SSH_CREDS_USR@$HOST:$DIR
                 '''
             }
         }
