@@ -1,0 +1,4 @@
+#!/bin/sh
+hugo server --disableFastRender --noHTTPCache
+
+exit 0
