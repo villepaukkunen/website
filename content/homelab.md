@@ -5,27 +5,7 @@ date: 2026-05-08
 ![Homelab](20260410_173937.jpg)
 
 #### Network Diagram
-{{< mermaid >}}
-graph
-    WAN[WAN] --> ROUTER[pfSense]
-    ROUTER --> MAINSWITCH[HPE OfficeConnect Switch 1820 48G J9981A]
-    MAINSWITCH --> VLAN1[LAN]
-    MAINSWITCH --> VLAN2[NAS]
-    MAINSWITCH --> VLAN3[Servers]
-    MAINSWITCH --> VLAN4[Personal Devices]
-    MAINSWITCH --> VLAN5[IoT Devices]
-    VLAN2 --> M73-1[m73-server-1]
-    M73-1 --> DAS[Icy Box IB-RD3640SU3 HDD Enclosure]
-    VLAN3 --> K3S_SERVERS[K3s Servers]
-    VLAN3 --> K3S_AGENTS[K3s Agents]
-    K3S_SERVERS --> M73-2[m73-server-2]
-    K3S_SERVERS --> M73-3[m73-server-3]
-    K3S_SERVERS --> M720q-1[m720q-server-1]
-    K3S_AGENTS --> ACER[acer-server-1]
-    K3S_AGENTS --> M600-2[m600-server-2]
-    VLAN4 --> AP[Zyxel Access Point]
-    AP -.-> WLDEV[Wireless Devices]
-{{< /mermaid >}}
+![Network Diagram](network-diagram.png)
 
 ## Hardware
 ### Router
