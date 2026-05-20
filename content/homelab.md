@@ -18,6 +18,12 @@ date: 2026-05-08
 		- 1 Gbe TP-Link TG-3468 v3.0
 		- 2.5 Gbe Intel I226
 
+### Switch
+- hpe-switch-1
+	- HPE OfficeConnect Switch 1820 48G J9981A
+		- 48 ports
+		- 1 Gbe
+
 ### NAS
 - m73-server-1
 	- Lenovo Thinkcentre M73 Tiny
