@@ -1,0 +1,4 @@
+---
+translationKey: posts
+title: Posts
+---

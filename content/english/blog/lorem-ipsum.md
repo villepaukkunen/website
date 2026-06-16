@@ -1,4 +1,5 @@
 ---
+translationKey: lorem-ipsum
 title: Lorem Ipsum
 date: 2025-11-14
 ---
