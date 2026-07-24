@@ -35,11 +35,16 @@ date: 2026-05-08
 
 ### K3s-Server
 - m73-server-2
-- m73-server-3
 	- Lenovo Thinkcentre M73 Tiny
 		- Intel® Core™ i3-4150T CPU @ 3.00GHz
 		- 12 GB DDR3
 		- 128 GB SSD
+		- 1 Gbe on board
+- m73-server-3
+	- Lenovo Thinkcentre M73 Tiny
+		- Intel® Core™ i3-4150T CPU @ 3.00GHz
+		- 12 GB DDR3
+		- 240 GB SSD
 		- 1 Gbe on board
 - m720q-server-1
 	- Lenovo Thinkcentre M720q Tiny
@@ -53,7 +58,7 @@ date: 2026-05-08
 	- Acer Aspire V5-552G
 		- AMD A10-5757M
 		- 8 GB DDR3
-		- 120 GB SSD
+		- 240 GB SSD
 		- 1 Gbe on board
 - m600-server-2
 	- Lenovo Thinkcentre M600 Tiny
