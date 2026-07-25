@@ -50,7 +50,7 @@ date: 2026-05-08
 	- Lenovo Thinkcentre M720q Tiny
 		- Intel® Core™ i5-8400T CPU @ 1.70GHz
 		- 16 GB DDR4
-		- 256 GB SSD
+		- 240 GB SSD
 		- 1 Gbe on board
 
 ### K3s Agents
