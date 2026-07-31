@@ -14,7 +14,7 @@ pipeline {
         stage('Load git submodule') {
             steps {
                 sh '''
-                git submodule update --init --recursive
+                    git submodule update --init --recursive
                 '''
             }
         }
@@ -29,14 +29,14 @@ pipeline {
         stage('Build website') {
             steps {
                 sh '''
-                hugo
+                    hugo
                 '''
             }
         }
         stage('Publish website') {
             steps {
                 sh '''
-                rsync -e "ssh -o StrictHostKeyChecking=no -i $SSH_CREDS" -avz --delete public/ $SSH_CREDS_USR@$HOST:$DIR
+                    rsync -e "ssh -o StrictHostKeyChecking=no -i $SSH_CREDS" -avz --delete public/ $SSH_CREDS_USR@$HOST:$DIR
                 '''
             }
         }
