@@ -14,15 +14,15 @@ date: 2026-05-08
 		- Intel® Core™ i3-7100 CPU @ 3.90GHz
 		- 16 GB DDR4
 		- 128 GB SSD
-		- 1 Gbe on board
-		- 1 Gbe TP-Link TG-3468 v3.0
-		- 2.5 Gbe Intel I226
+		- 1 GbE on board
+		- 1 GbE TP-Link TG-3468 v3.0
+		- 2.5 GbE Intel I226
 
 ### Switch
 - hpe-switch-1
 	- HPE OfficeConnect Switch 1820 48G J9981A
 		- 48 Ports
-		- 1 Gbe
+		- 1 GbE
 
 ### NAS
 - m73-server-1
@@ -30,7 +30,7 @@ date: 2026-05-08
 		- Intel® Core™ i3-4150T CPU @ 3.00GHz
 		- 12 GB DDR3
 		- 128 GB SSD
-		- 1 Gbe on board
+		- 1 GbE on board
 		- Icy Box IB-RD3640SU3 4 Bay USB-Festplattengehäuse
 
 ### K3s-Server
@@ -39,19 +39,19 @@ date: 2026-05-08
 		- Intel® Core™ i3-4150T CPU @ 3.00GHz
 		- 12 GB DDR3
 		- 128 GB SSD
-		- 1 Gbe on board
+		- 1 GbE on board
 - m73-server-3
 	- Lenovo Thinkcentre M73 Tiny
 		- Intel® Core™ i3-4150T CPU @ 3.00GHz
 		- 12 GB DDR3
 		- 240 GB SSD
-		- 1 Gbe on board
+		- 1 GbE on board
 - m720q-server-1
 	- Lenovo Thinkcentre M720q Tiny
 		- Intel® Core™ i5-8400T CPU @ 1.70GHz
 		- 16 GB DDR4
 		- 240 GB SSD
-		- 1 Gbe on board
+		- 1 GbE on board
 
 ### K3s-Agenten
 - acer-server-1
@@ -59,10 +59,10 @@ date: 2026-05-08
 		- AMD A10-5757M
 		- 8 GB DDR3
 		- 240 GB SSD
-		- 1 Gbe on board
+		- 1 GbE on board
 - m600-server-2
 	- Lenovo Thinkcentre M600 Tiny
 		- Intel® Celeron™ N3010 CPU @ 1.04GHz
 		- 4 GB DDR3
 		- 16 GB SSD
-		- 1 Gbe on board
+		- 1 GbE on board
